@@ -1,0 +1,171 @@
+.page-container {
+  min-height: calc(100vh - 80px);
+  background-color: #1a1a1a;
+  padding: 2rem 0;
+}
+
+.page-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #242424;
+  border-radius: 8px;
+}
+
+.page-content h1 {
+  color: #61dafb;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.page-text {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.page-text p {
+  margin-bottom: 1.5rem;
+}
+
+/* Pricing Styles */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pricing-card {
+  background-color: #1a1a1a;
+  border: 2px solid #61dafb;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(97, 218, 251, 0.3);
+}
+
+.pricing-card h2 {
+  color: #61dafb;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-card .price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #61dafb;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.pricing-card li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #444;
+}
+
+.pricing-card li:last-child {
+  border-bottom: none;
+}
+
+.plan-btn {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.plan-btn:hover {
+  background-color: #4fa8c5;
+}
+
+/* Contact Form Styles */
+.contact-form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-form label {
+  color: #61dafb;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #61dafb;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #4fa8c5;
+  box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.2);
+}
+
+.contact-form .submit-btn {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .submit-btn:hover {
+  background-color: #4fa8c5;
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding: 1.5rem;
+  }
+
+  .page-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
